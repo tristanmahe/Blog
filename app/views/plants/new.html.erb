@@ -1,0 +1,20 @@
+<div class="banner_login" style="background-image: url(https://source.unsplash.com/hX_hf2lPpUU);">
+  <div class="container">
+    <div>
+    <%= link_to "Back to Plants", plants_path, class: "btn btn-ghost" %>
+    </div>
+    <div class="row">
+    <h1>New Plant</h1>
+
+    <% if policy(Plant).create? %>
+      <%= simple_form_for(@plant) do |f| %>
+        <%= f.input :species %>
+        <%= f.input :status %>
+        <%= f.input :pricing %>
+        <%= f.input :photo, as: :file %>
+        <%= f.button :submit, class:"btn btn-ghost-dark" %>
+      <% end %>
+    <% end %>
+    </div>
+  </div>
+</div>

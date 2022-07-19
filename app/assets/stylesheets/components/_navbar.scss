@@ -1,0 +1,31 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white;
+  -webkit-box-shadow: 0px 0px 22px -3px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 22px -3px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0px;
+  z-index:1000;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand {
+  width: 45px;
+}
+
+.home-nav {
+  background: transparent;
+  position: absolute;
+  z-index:1;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  box-shadow: none;
+  a {
+    color: white !important;
+
+  }
+}
